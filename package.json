@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/front-camp-2018/project-scaffoldings.git"
+    "url": "git+https://github.com/pinkmadkitten/cat-app.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/front-camp-2018/project-scaffoldings/issues"
+    "url": "https://github.com/pinkmadkitten/cat-app/issues"
   },
-  "homepage": "https://github.com/front-camp-2018/project-scaffoldings#readme",
+  "homepage": "https://github.com/pinkmadkitten/cat-app#readme",
   "devDependencies": {
     "css-loader": "^1.0.0",
     "eslint": "^5.6.1",
@@ -41,6 +41,7 @@
     "webpack-dev-server": "^3.1.9"
   },
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "restify": "^7.2.1"
   }
 }
