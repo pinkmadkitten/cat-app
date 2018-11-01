@@ -1,0 +1,139 @@
+h2,
+h3 {
+  color: #444c63;
+  font-family: Arial, sans-serif;
+}
+
+img {
+  display: block;
+  width: auto;
+  height: 100%;
+}
+
+body {
+  background: url("../img/space.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+}
+
+.main-box {
+  background-color: rgba(229, 229, 229, 0.3);
+  height: 300px;
+  width: 450px;
+  min-height: 50%;
+  margin-top: 100px;
+  padding: 5%;
+  margin-left: 100px;
+  border-radius: 5px;
+  border: 2px solid rgba(229, 229, 229, 0.2);
+  box-shadow: 1px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.title-box {
+  background-color: rgba(229, 229, 229, 0.6);
+  padding: 5%;
+  border-radius: 5px;
+  border: 2px solid rgba(229, 229, 229, 0.4);
+}
+
+.title-main-header {
+  display: flex;
+}
+
+.fa-heart {
+  margin-top: 25px;
+  margin-left: 20px;
+  font-size: large;
+  color: #444c63;
+}
+
+.btn-generate {
+  width: 200px;
+  height: 40px;
+  margin-left: 107px;
+  border-radius: 5px;
+  display: flex;
+  background-color: #ffe5ed;
+  box-shadow: 1px 8px 15px rgba(0, 0, 0, 0.5);
+  margin-bottom: 22px;
+  margin-top: 40px;
+}
+
+.btn-generate:hover {
+  background-color: #cfb5bd;
+}
+
+.btn-generate img {
+  width: 30px;
+  height: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 2px;
+}
+
+.btn-text {
+  font-family: Arial, sans-serif;
+  font-size: small;
+  margin-top: 8px;
+  color: #8a9db4;
+}
+
+.share {
+  padding: 10px;
+  margin-left: 170px;
+}
+
+.share .fa {
+  padding: 5px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.share .fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #481372;
+  color: white;
+}
+
+.fa-twitter {
+  background: #b487b7;
+  color: white;
+}
+
+.fa-skype {
+  background: #9998df;
+  color: white;
+}
+
+.fact {
+  font-family: Arial, sans-serif;
+  color: #444c63;
+}
+
+.content {
+  display: flex;
+}
+
+.img-box {
+  margin: 0 50px 0 100px;
+  display: flex;
+}
+
+.img-box img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border: 10px solid rgba(229, 229, 229, 0.5);
+  border-radius: 5px;
+}
+
+.column-1,
+.column-2 {
+  margin-left: 30px;
+}
