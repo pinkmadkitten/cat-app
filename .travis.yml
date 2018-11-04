@@ -9,4 +9,4 @@ deploy:
   skip-cleanup: true
   keep-history: true
   on:
-    branch: master
+    branch: travis-fix
