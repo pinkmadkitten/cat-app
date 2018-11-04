@@ -8,11 +8,13 @@ Show random pictures and facts about different cat breeds. Could be useful for e
 ## Tech stack
  - restify (backend)
  - fetch (frontend)
- - ES6 (both frontend & backend)  
+ - ES6 (both frontend and backend)  
+ - JSON file as DB
 
 ## Useful links
-[GitHub Pages](https://pinkmadkitten.github.io/cat-app/index.html)
-[Mockup](https://wireframepro.mockflow.com/view/randomcatapp#/page/D289c4f55c3a76667f46c5da6de6c01a4)
+[GitHub Pages](https://pinkmadkitten.github.io/cat-app/index.html)  
+[Mockup](https://wireframepro.mockflow.com/view/randomcatapp#/page/D289c4f55c3a76667f46c5da6de6c01a4)  
+[Contributing Guide](CONTRIBUTING.md)
 
 ## Code quality
 
