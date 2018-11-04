@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 h2,
 h3 {
   color: #444c63;
@@ -18,8 +22,8 @@ body {
 
 .main-box {
   background-color: rgba(229, 229, 229, 0.3);
-  height: 300px;
-  width: 450px;
+  height: 450px;
+  width: 50%;
   min-height: 50%;
   margin-top: 100px;
   padding: 5%;
@@ -48,9 +52,9 @@ body {
 }
 
 .btn-generate {
-  width: 200px;
+  width: 50%;
   height: 40px;
-  margin-left: 107px;
+  margin-left: 25%;
   border-radius: 5px;
   display: flex;
   background-color: #ffe5ed;
@@ -64,11 +68,10 @@ body {
 }
 
 .btn-generate img {
-  width: 30px;
   height: 30px;
-  padding-right: 10px;
-  padding-left: 10px;
-  margin-top: 2px;
+  padding-right: 4%;
+  padding-left: 5%;
+  margin-top: 1%;
 }
 
 .btn-text {
@@ -80,12 +83,15 @@ body {
 
 .share {
   padding: 10px;
-  margin-left: 170px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
 }
 
 .share .fa {
   padding: 5px;
-  width: 20px;
+  width: 30px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
@@ -121,13 +127,15 @@ body {
 }
 
 .img-box {
-  margin: 0 50px 0 100px;
   display: flex;
+  width: 50%;
+  justify-content: flex-end;
+  margin-right: 25px;
 }
 
 .img-box img {
-  width: 200px;
-  height: 200px;
+  width: 240px;
+  height: 215px;
   margin: 10px;
   border: 10px solid rgba(229, 229, 229, 0.5);
   border-radius: 5px;
@@ -135,5 +143,5 @@ body {
 
 .column-1,
 .column-2 {
-  margin-left: 30px;
+  flex-wrap: wrap;
 }

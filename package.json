@@ -6,6 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --config ./webpack/webpack.dev.js --open HOST=0.0.0.0",
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "lint": "eslint ./src",
     "lint:watch": "esw --watch",
     "stylelint": "stylelint './src/**/*.css'",
