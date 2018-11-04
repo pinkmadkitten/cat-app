@@ -4,10 +4,3 @@ node_js:
   - "10"
 script:
   - npm run test:coverage
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: GITHUB_TOKEN
-  keep-history: true
-  on:
-    branch: travis-fix
