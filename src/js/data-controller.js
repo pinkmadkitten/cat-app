@@ -1,7 +1,7 @@
 /* eslint no-console: 0 */
 class DataController {
   constructor (serverPath) {
-    this.server = serverPath;
+    this.server = serverPath || window.location.origin;
   }
 
   async getAwailableBreeds () {

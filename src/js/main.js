@@ -1,5 +1,5 @@
 const DataController = require('./data-controller');
-const dataService = new DataController('http://localhost:8080');
+const dataService = new DataController();
 main();
 
 async function main () {
