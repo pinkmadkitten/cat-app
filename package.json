@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack/webpack.dev.js --open HOST=0.0.0.0",
+    "start": "npm run build && npm run start:server",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "lint": "eslint ./src",
@@ -12,7 +12,8 @@
     "stylelint": "stylelint './src/**/*.css'",
     "precommit": "npm run lint && npm run stylelint",
     "prepush": "npm run test",
-    "start:server": "node ./backend/app.js"
+    "start:server": "node ./backend/app.js",
+    "build": "webpack --config ./webpack/webpack.dev.js"
   },
   "repository": {
     "type": "git",
@@ -42,7 +43,6 @@
     "webpack-dev-server": "^3.1.9"
   },
   "dependencies": {
-    "font-awesome": "^4.7.0",
     "restify": "^7.2.1"
   }
 }
