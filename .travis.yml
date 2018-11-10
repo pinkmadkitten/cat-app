@@ -6,12 +6,10 @@ cache:
 - node_modules
 script:
 - npm run test:coverage
-before_deploy: npm run build
 deploy:
   provider: heroku
   api_key:
     secure: "tJ6dA6Zb9Olk5WmiX6+at2w68TYMdUpZn1XZJtbTGAi1pE573WZ5emOATRQzl1h54wyKHimMKzA9V/NPKeYgVM0WHex8iFtEFNwbvwDb7J8tzXJkR0+ujawzH/9jWB+Tt9tXqq2i5ImabruwIlE4bvdO4B4AIXpsSYk1BAq08FgpHjnhX/SIEqJnXD99DSO1qc5+qrtDJ4FNC+k9P20QKMRIu4/1+bemFFCdYgAHSM+4lGCY4W3WaMvn7I1aIzZDp8eRojEJL9ZxsG0Sd7RJxGpWyVqF4mewV2+DFOhKuCdA+DmCWX92PlL1Bk0rrCtMlNbI+dYCeN7aQNZw3m882J2uzxulTfOmZbYYKMuDfJJBz37lbsH5qu8PJ2tYwcYP/qmcal9yI0KMxaUNQL+Qd7PeT4jL7H6D9/ZCvg9cDxf/n63knCu475AGErRQblBj3kjpBEpXSRDxsK42976ZdvcWomBpjquRwHaWPL37EWXLfwzQovHbKyWo5maiL9SGRLwIbfMst9d9TqVDwQ5jntd/NSJL9297U9+UVi0Lx5kqimu95PhfTdysDXO5NftKQSCnPo76HCrVPhwD4wTrUKSZufilTnYhkb/fGLf07l50DhiC6RvAspe/fQ/Fw9kGosR6ff3tv3scUPqQxCSNeZ2N47r0fDoralq7KqnNM38="
   app: cat-app-demo
-  run: npm run start:server
   on:
     repo: pinkmadkitten/cat-app
