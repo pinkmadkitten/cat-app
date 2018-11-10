@@ -3,16 +3,17 @@ Show random pictures and facts about different cat breeds. Could be useful for e
 ## Teacher: 
 [Vladimir Shevchuk](https://github.com/dosandk)  
 
-[Link to the front-camp “facebook” page](https://facebook.com) - TBA
+[Link to the front-camp “facebook” page](https://www.facebook.com/groups/270300106928894/)
 
 ## Tech stack
  - restify (backend)
  - fetch (frontend)
  - ES6 (both frontend and backend)  
  - JSON file as DB
+ - Jest (unit tests)
 
 ## Useful links
-[GitHub Pages](https://pinkmadkitten.github.io/cat-app/index.html)  
+[Heroku](https://cat-app-demo.herokuapp.com/)  
 [Mockup](https://wireframepro.mockflow.com/view/randomcatapp#/page/D289c4f55c3a76667f46c5da6de6c01a4)  
 [Contributing Guide](CONTRIBUTING.md)
 

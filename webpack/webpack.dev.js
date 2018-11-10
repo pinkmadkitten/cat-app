@@ -1,5 +1,4 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -8,7 +7,7 @@ module.exports = {
   ],
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, '../dist')
+    path: path.resolve(__dirname, '../src/js')
   },
   devtool: 'cheap-module-eval-source-map',
   module: {
@@ -41,15 +40,5 @@ module.exports = {
         ]
       }
     ]
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: path.resolve('./index.html')
-    }),
-  ],
-  devServer: {
-    contentBase: path.join(__dirname, '../'),
-    compress: true,
-    historyApiFallback: true
   }
 };
