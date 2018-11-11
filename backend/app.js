@@ -31,6 +31,10 @@ server.get('/src/*', restify.plugins.serveStatic({
   directory: srcPath
 }));
 
+server.get('/dist/*', restify.plugins.serveStatic({
+  directory: srcPath
+}));
+
 // data routes:
 
 server.get("/breeds", function(req,res,next){

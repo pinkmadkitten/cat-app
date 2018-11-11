@@ -33,6 +33,16 @@ class DataController {
       console.log(error);
     }
   }
+
+  async getPhotosLinks (breed) {
+    try {
+      let response = await fetch(`${this.server}/pictures/${breed}`);
+      response = await response.json();
+      return response;
+    } catch (error) {
+      console.log(error);
+    }
+  }
 }
 
 module.exports = DataController;

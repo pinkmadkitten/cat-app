@@ -47,4 +47,10 @@ describe('DataService', function () {
     expect(response.url).toBe(`${serverLink}/facts/${catName}`);
   });
 
+  it('should call pictures API specific for breed', async function () {
+    const catName = 'scotish';
+    const response = await dataService.getPhotosLinks(catName);
+    expect(response.url).toBe(`${serverLink}/pictures/${catName}`);
+  });
+
 });
