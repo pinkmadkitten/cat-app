@@ -7,7 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./src/css/index.css">
   <link rel="stylesheet" href="./src/font-awesome/css/font-awesome.min.css">
-  <title>Document</title>
+  <link rel="icon" type="image/ico" href="./src/favicon.ico"/>
+  <title>Cat App</title>
 </head>
 <body>
 <main>
@@ -15,13 +16,13 @@
     <div class="main-box">
       <div class="title-box">
         <div class="title-main-header">
-          <h2>Блоссом і її життя :)</h2>
+          <h2>Random fact about <span class="cat-breed"></span></h2>
           <i class="fa fa-heart" aria-hidden="true"></i>
         </div>
-        <h3>Чи знали ви.....???</h3>
-        <p class="fact"></p>
+        <h3 class="fact-header"></h3>
+        <p class="fact-body"></p>
         <button class="btn-generate" type="button">
-          <img src="./src/img/cat-emoji.png" alt="cat"><span class="btn-text"> Шо там Блоссом?</span>
+          <img src="./src/img/cat-emoji.png" alt="cat"><span class="btn-text">Get another fact</span>
         </button>
       </div>
       <div class="share">
@@ -31,19 +32,15 @@
       </div>
     </div>
     <div class="img-box">
-      <div class="column-1">
+        <img src="./src/img/blossom.jpg">
+        <img src="./src/img/blossom.jpg">
+        <img src="./src/img/blossom.jpg">
         <img src="./src/img/blossom.jpg">
         <img src="./src/img/blossom.jpg">
         <img src="./src/img/blossom.jpg">
       </div>
-      <div class="column-2">
-        <img src="./src/img/blossom.jpg">
-        <img src="./src/img/blossom.jpg">
-        <img src="./src/img/blossom.jpg">
-      </div>
-    </div>
   </div>
 </main>
-<script src="./src/js/bundle.js"></script>
+<script src="./dist/bundle.js"></script>
 </body>
 </html>

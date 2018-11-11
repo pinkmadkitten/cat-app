@@ -1,36 +1,57 @@
 const DataController = require('./data-controller');
 const dataService = new DataController();
+
 main();
 
 async function main () {
-  const pFact = document.querySelector('.fact');
-  pFact.innerHTML = 'Blossom зранку встає, очка лапками тере :) ';
-
-  const catArr = ['Blossom зранку встає, очка лапками тере :) ',
-    'Кормик лапкою гребе',
-    'Муркає і мяукає',
-    'Блоссом гарний кіт',
-    'Сашка любить купатись з Блоссом',
-    'Блоссом любить гасати з мамою',
-    'Діма любить прибирати іграшки Блоссом о 1 ночі',
-    'Блоссом дуже сильно любить Олю <3'];
-
-  function getRandomPhrase () {
-    return catArr[Math.floor(Math.random() * catArr.length)];
-  }
+  // save breed name in order to check if we need to render cat images in case new fact is about same breed
+  let prevBreedName;
+  const breeds = await dataService.getAwailableBreeds();
+  const breedName = getRandomBreed(breeds);
+  const breedNameHolder = document.querySelector('.cat-breed');
+  const factBody = document.querySelector('.fact-body');
+  const factHeader = document.querySelector('.fact-header');
+  const imagesBox = document.querySelector('.img-box');
+  getRandomFact(breedName);
+  createImages(breedName);
+  prevBreedName = breedName;
 
 
   const button = document.querySelector('button');
 
-  button.addEventListener('click', function () {
-    pFact.innerHTML = getRandomPhrase();
+  button.addEventListener('click', () => {
+    const breedName = getRandomBreed(breeds);
+    getRandomFact(breedName);
+    createImages(breedName);
+    prevBreedName = breedName;
   });
 
-  // TODO: replace console.log with data manipulations
-  /* eslint-disable no-alert, no-console */
-  console.log(await dataService.getAwailableBreeds());
-  console.log(await dataService.getAllFacts());
-  console.log(await dataService.getFactAbout('munchkin'));
-  /* eslint-enable no-alert, no-console */
+  function createImages (breed) {
+    if (prevBreedName === breed) {
+      return;
+    }
+    imagesBox.innerHTML = '';
+    dataService.getPhotosLinks(breed).then( links => {
+      links.forEach( link => {
+        const div = document.createElement('div');
+        const img = document.createElement('img');
+        img.src = link;
+        div.appendChild(img);
+        imagesBox.appendChild(div);
+      });
+    });
+  }
+
+  function getRandomFact (breed) {
+    dataService.getFactAbout(breed).then(catFact => {
+      breedNameHolder.innerHTML = breed;
+      factBody.innerHTML = catFact.fact;
+      factHeader.innerHTML = catFact.header;
+    });
+  }
+
+  function getRandomBreed (breeds) {
+    return breeds[Math.floor(Math.random() * breeds.length)];
+  }
 
 }
