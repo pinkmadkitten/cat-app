@@ -26,6 +26,31 @@ async function main () {
     prevBreedName = breedName;
   });
 
+  const twitterShare = document.querySelector('[data-js="twitter-share"]');
+
+  twitterShare.onclick = function (e) {
+    e.preventDefault();
+    const twitterWindow = window.open('https://twitter.com/share?url=' + document.URL,
+      'twitter-popup', 'height=350,width=600');
+    if (twitterWindow.focus) {
+      twitterWindow.focus();
+    }
+    return false;
+  };
+
+  const facebookShare = document.querySelector('[data-js="facebook-share"]');
+
+  facebookShare.onclick = function (e) {
+    e.preventDefault();
+    const facebookWindow = window.open(
+      'https://www.facebook.com/sharer/sharer.php?u=' + document.URL,
+      'facebook-popup', 'height=350,width=600');
+    if (facebookWindow.focus) {
+      facebookWindow.focus();
+    }
+    return false;
+  };
+
   function createImages (breed) {
     if (prevBreedName === breed) {
       return;
@@ -53,5 +78,4 @@ async function main () {
   function getRandomBreed (breeds) {
     return breeds[Math.floor(Math.random() * breeds.length)];
   }
-
 }
