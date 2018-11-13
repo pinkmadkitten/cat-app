@@ -63,9 +63,7 @@ body {
 }
 
 .btn-generate {
-  width: 50%;
   min-width: 120px;
-  height: 40px;
   border-radius: 5px;
   display: flex;
   background-color: #ffe5ed;
@@ -88,8 +86,8 @@ body {
 
 .btn-text {
   font-family: Arial, sans-serif;
+  color: dimgray;
   font-size: small;
-  color: #8a9db4;
 }
 
 .share {
@@ -107,6 +105,7 @@ body {
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .share .fa:hover {
@@ -123,15 +122,10 @@ body {
   color: white;
 }
 
-.fa-skype {
-  background: #9998df;
-  color: white;
-}
-
 .fact-body {
   font-family: Arial, sans-serif;
   color: #444c63;
-  text-indent: 1rem;
+  line-height: 20px;
 }
 
 .content {
